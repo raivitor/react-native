@@ -32,13 +32,13 @@ const gerarNovaFrase = () => {
   frases[4] = 'Se falta de tempo realmente fosse uma justificativa pra não realizar os seus projetos, somente os desocupados teriam sucesso.'
   var frase = frases[random]
   Alert.alert(
-  'FRASE DE HOJE',
-  frase,
-  [
-    {text: 'OK', onPress: () => console.log('OK Pressed')}
-  ],
-  { cancelable: true }
-)
+    'FRASE DE HOJE',
+    frase,
+    [
+      {text: 'OK', onPress: () => console.log('OK Pressed')}
+    ],
+    { cancelable: true }
+  )
 }
 
 // Criar o componente
