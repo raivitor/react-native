@@ -31,6 +31,7 @@ class Icone extends Component{
           <Image source={imgTesoura} />
         </View>
       );
+    }
     return false;
   }
 }
