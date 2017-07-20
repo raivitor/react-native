@@ -7,7 +7,6 @@ import {
   StyleSheet
 } from 'react-native';
 
-//importar o componente barra navegação
 import BarraNavegacao from './BarraNavegacao';
 
 const detalheContatos = require('../imgs/detalhe_contato.png');
@@ -16,10 +15,7 @@ export default class CenaContatos extends Component {
   render() {
     return (
 			<View style={{flex: 1, backgroundColor:'#FFF'}}>
-        <StatusBar 
-          //hidden
-          backgroundColor='#61BD8C'
-        />
+        <StatusBar backgroundColor='#61BD8C' />
 
         <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#61BD8C'/>
 
@@ -29,8 +25,8 @@ export default class CenaContatos extends Component {
         </View>
 
         <View style={styles.detalheContatos}>
-          <Text style={styles.txtContatos}>TEL: (11) 1234-1234</Text>
-          <Text style={styles.txtContatos}>CEL: (11) 91234-1234</Text>
+          <Text style={styles.txtContatos}>TEL: (99) 9999-9999</Text>
+          <Text style={styles.txtContatos}>CEL: (84) 999-999-999</Text>
           <Text style={styles.txtContatos}>EMAIL: contato@atmconsultoria.com</Text>
         </View>
 

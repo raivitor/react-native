@@ -7,7 +7,6 @@ import {
   StyleSheet
 } from 'react-native';
 
-//importar o componente barra navegação
 import BarraNavegacao from './BarraNavegacao';
 
 const detalheEmpresa = require('../imgs/detalhe_empresa.png');
@@ -16,10 +15,7 @@ export default class CenaEmpresa extends Component {
   render() {
     return (
 			<View style={{flex: 1, backgroundColor:'#FFF'}}>
-        <StatusBar 
-          //hidden
-          backgroundColor='#EC7148'
-        />
+        <StatusBar backgroundColor='#EC7148' />
 
         <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#EC7148'/>
 

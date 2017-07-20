@@ -7,7 +7,6 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-//importar o componente barra navegação
 import BarraNavegacao from './BarraNavegacao';
 
 const logo = require('../imgs/logo.png');
@@ -20,10 +19,7 @@ export default class CenaPrincipal extends Component {
   render() {
     return (
       <View>
-        <StatusBar 
-          //hidden
-          backgroundColor='#CCC'
-        />
+        <StatusBar backgroundColor='#CCC' />
 
         <BarraNavegacao />
 
@@ -40,8 +36,7 @@ export default class CenaPrincipal extends Component {
               activeOpacity={0.3}
               onPress={() => {
                 this.props.navigator.push({ id: 'cliente' });
-              }}
-            >
+              }}>
               <Image style={styles.imgMenu} source={menuCliente} />
             </TouchableHighlight>
 
@@ -50,8 +45,7 @@ export default class CenaPrincipal extends Component {
               activeOpacity={0.3}
               onPress={() => {
                 this.props.navigator.push({ id: 'contato' });
-              }}
-            >
+              }}>
               <Image style={styles.imgMenu} source={menuContato} />
             </TouchableHighlight>
           </View>
@@ -62,8 +56,7 @@ export default class CenaPrincipal extends Component {
               activeOpacity={0.3}
               onPress={() => {
                 this.props.navigator.push({ id: 'empresa' });
-              }}
-            >
+              }}>
               <Image style={styles.imgMenu} source={menuEmpresa} />
             </TouchableHighlight>
 
@@ -72,8 +65,7 @@ export default class CenaPrincipal extends Component {
               activeOpacity={0.3}
               onPress={() => {
                 this.props.navigator.push({ id: 'servico' });
-              }}
-            >
+              }}>
               <Image style={styles.imgMenu} source={menuServico} />
             </TouchableHighlight>
           </View>

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import {
-  Text,
-  View,
-  StyleSheet,
-  Image,
-  TouchableHighlight
+	Text,
+	View,
+	StyleSheet,
+	Image,
+	TouchableHighlight
 } from 'react-native';
 
 const btnVoltar = require('../imgs/btn_voltar.png');
 
 export default class BarraNavegacao extends Component {
-  render() {
+	render() {
 		if (this.props.voltar) {
 			return (
 				<View style={[styles.barraTitulo, { backgroundColor: this.props.corDeFundo }]}>
@@ -28,12 +28,12 @@ export default class BarraNavegacao extends Component {
 			);
 		}
 
-    return (
+		return (
 			<View style={styles.barraTitulo}>
 				<Text style={styles.titulo}>ATM Consultoria</Text>
-      </View>
-    );
-  }
+			</View>
+		);
+	}
 }
 
 const styles = StyleSheet.create({

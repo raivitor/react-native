@@ -7,7 +7,6 @@ import {
   StyleSheet
 } from 'react-native';
 
-//importar o componente barra navegação
 import BarraNavegacao from './BarraNavegacao';
 
 const detalheClientes = require('../imgs/detalhe_cliente.png');
@@ -17,11 +16,8 @@ const cliente2 = require('../imgs/cliente2.png');
 export default class CenaClientes extends Component {
   render() {
     return (
-			<View style={{flex: 1, backgroundColor:'#FFF'}}>
-        <StatusBar 
-          //hidden
-          backgroundColor='#B9C941'
-        />
+			<View style = {{flex: 1, backgroundColor:'#FFF'}}>
+        <StatusBar backgroundColor='#B9C941' />
 
         <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#B9C941'/>
 
