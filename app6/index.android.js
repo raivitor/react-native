@@ -1,53 +1,52 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
+
+const logo = require('./src/imgs/logo.png');
+const btnJogar = require('./src/imgs/botao_jogar.png');
+const btnSobreJogo = require('./src/imgs/sobre_jogo.png');
+const btnOutrosJogos = require('./src/imgs/outros_jogos.png');
 
 export default class app6 extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+      <View style={styles.cenaPrincipal}>
+
+        <View style={styles.apresentacaoJogo}>
+          <Image source={logo} />
+          <Image source={btnJogar} />
+        </View>
+
+        <View style={styles.rodape}>
+          <Image source={btnSobreJogo} />
+          <Image source={btnOutrosJogos} />
+        </View>
+
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  cenaPrincipal: {
     flex: 1,
+    backgroundColor: '#61BD8C'
+  },
+  apresentacaoJogo: {
+    flex: 10,
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    alignItems: 'center'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  rodape: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  }
 });
 
 AppRegistry.registerComponent('app6', () => app6);
