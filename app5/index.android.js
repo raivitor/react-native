@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  Navigator
-} from 'react-native';
+import { AppRegistry} from 'react-native';
+import { Navigator } from 'react-native-deprecated-custom-components'
 
 import CenaPrincipal from './src/components/CenaPrincipal';
 import CenaClientes from './src/components/CenaClientes';
