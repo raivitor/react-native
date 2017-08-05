@@ -23,6 +23,9 @@ Testando alguns conceitos aprendidos no curso de React-Native
 [app6][app_6] (Cara-ou-coroa)
 - Utilizando react-native-router-flux para navegação entre cenas
 
+[app7][app_7] - em andamento
+- Virtual DOM
+- Alterando o estado dos componentes com o text input
 
 [app_1]: <https://github.com/raivitor/react-native/tree/master/app1>
 [app_2]: <https://github.com/raivitor/react-native/tree/master/app2>
@@ -30,3 +33,4 @@ Testando alguns conceitos aprendidos no curso de React-Native
 [app_4]: <https://github.com/raivitor/react-native/tree/master/app4>
 [app_5]: <https://github.com/raivitor/react-native/tree/master/app5>
 [app_6]: <https://github.com/raivitor/react-native/tree/master/app6>
+[app_7]: <https://github.com/raivitor/react-native/tree/master/app7>
