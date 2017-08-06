@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {View, Text} from 'react-native';
 
-const Painel props => (
+const Painel =	props => (
 	<View>
 		<Text>Painel</Text>
 	</View>

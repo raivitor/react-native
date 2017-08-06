@@ -1,3 +1,3 @@
-export * from './Painel';
-export * from './Resultado';
-export * from './Topo';
+export * from './painel';
+export * from './resultado';
+export * from './topo';
